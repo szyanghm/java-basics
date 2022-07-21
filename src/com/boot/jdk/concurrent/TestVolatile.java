@@ -1,12 +1,16 @@
 package com.boot.jdk.concurrent;
 
 /**
- * Volatile 可见性案例测试
+ * volatile 可见性案例测试
  * @Author v_haimiyang
  * @Date 2022/7/21 15:28
  * @Version 1.0
  */
 public class TestVolatile {
+    /**
+     * flag加上volatile一定会跳出循环
+     * count++; 后面加上一行打印也会跳出循环
+     */
     private boolean flag = true;
     private int count = 0;
     public void refresh() {
